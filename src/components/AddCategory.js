@@ -9,7 +9,7 @@ export const AddCategory = ({setCategories}) => {
         e.preventDefault();        
         if (category.trim().length > 2) {
             setCategories( categories =>[category, ...categories]);
-            e.target.reset();
+            setCategory('');
         }
     };
 
@@ -19,10 +19,12 @@ export const AddCategory = ({setCategories}) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <p>{category}</p>
             <input 
                 type="text"
                 placeholder="Ingrese algo"
                 onChange={handleOnChange}
+                value={category}
             />
             <button type="reset">Limpiar</button>
         </form>
