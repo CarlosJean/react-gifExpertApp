@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente <GifGrid /> Debe mostrar items 1`] = `
+<Fragment>
+  <h3>
+    cheesburguer
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GridItem
+      id="12348946qd6"
+      key="12348946qd6"
+      title="Cualquier cosa"
+      url="https://algo.com/cualquier/cosa"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Pruebas al componente <GifGrid /> El componente debe coincidir con el snapshot 1`] = `
+<Fragment>
+  <h3>
+    cheesburguer
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Cargando...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
